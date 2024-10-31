@@ -1,0 +1,353 @@
+/* Custom styles that complement Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Main Navigation */
+.main-nav {
+    position: relative;
+    width: 1440px;
+    height: 112px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+/* Logo Container - Now spans both tiers */
+.logo-container {
+    position: absolute;
+    width: 134px;
+    height: 145px;
+    top: -17px;
+    left: 10px;
+    z-index: 10;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Top Tier */
+.nav-top {
+    width: 100%;
+    height: 49px;
+    background-color: #000000;
+}
+
+.top-content {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-left: 160px; /* Account for logo */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.auth-button {
+    /* background-color: #FFD700; */
+    /* color: black; */
+    border: none;
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Separator Line */
+.nav-separator {
+    width:100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Tier */
+.nav-bottom {
+    width:100%;
+    height: 62px;
+    background-color: #000000;
+    position: relative;
+}
+
+.bottom-content {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-left: 160px; /* Account for logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Rest of the CSS remains the same */
+
+/* Shop Section */
+.middle-navigation-item {
+    position: relative;
+    width: 109.72px;
+    height: 62px;
+    padding: 0 22px 0 16px;
+}
+
+.shop-link {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 62px;
+    padding: 21.5px 0 22.5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.shop-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 23px;
+    left: 1.14px;
+    color: white;
+}
+
+.shop-text {
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    top: 21.5px;
+    left: 23.14px;
+    font-size: 12.3px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+}
+
+.arrow-icon {
+    position: absolute;
+    width: 7.72px;
+    height: 10px;
+    top: 26px;
+    left: 80px;
+    color: white;
+}
+
+/* Search Button */
+/* .search-button {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+} */
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+/* Right Section */
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Yellow Border */
+.yellow-border {
+    position: absolute;
+    bottom: 0;
+    width: 1440px;
+    height: 8px;
+    background-color: #FFD700;
+}
+
+/* Hover States */
+.nav-item:hover,
+.shop-link:hover,
+.search-button:hover {
+    color: #FFD700;
+}
+
+.auth-button:hover {
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 1440px) {
+    .main-nav,
+    .top-content,
+    .bottom-content {
+        width: 100%;
+    }
+}
+
+/* Preview banner section */
+.preview-banner {
+    height: 8rem; /* equivalent to Tailwind's h-32 */
+    z-index: 10;
+}
+
+/* Gradient overlay for the banner */
+.banner-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.7) 50%,
+        rgba(0, 0, 0, 0.9) 100%
+    );
+    transition: opacity 0.3s ease;
+}
+
+/* Additional overlay for darker bottom */
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.95) 0%,
+        transparent 100%
+    );
+    transition: opacity 0.3s ease;
+}
+
+/* Preview text container */
+/* /
+/* Text underline styles
+.preview-label,
+.preview-title {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.25rem;
+} */
+
+/* Hover effects */
+.preview-banner:hover .banner-gradient {
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.75) 50%,
+        rgba(0, 0, 0, 0.95) 100%
+    );
+}
+
+.preview-banner:hover .banner-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.98) 0%,
+        transparent 100%
+    );
+}
+
+
+/* Individual cards */
+.card {
+    background-color: #0B0F19;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.card {
+    width: 280px;
+    background-color: #0B0F19;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 160px;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.card-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Video duration badge */
+.video-duration {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/* Tags */
+.card-tag {
+    display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.time-tag {
+    color: #9CA3AF;
+    font-size: 12px;
+}
+.yellow-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(180deg, transparent 0%, #FFD700 100%);
+    opacity: 0.3;
+}
+.bg-split {
+    background: linear-gradient(to bottom, black 50%, #FFD700 50%, black 100%);
+}

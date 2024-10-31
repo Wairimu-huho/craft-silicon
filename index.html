@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="min-h-screen bg-black">
+    <!-- Main Navigation Container -->
+    <div>
+        <!-- Navigation Container -->
+        <nav class="main-nav">
+            <!-- Logo (positioned to span both tiers) -->
+            <div class="logo-container">
+                <img src="images/logo-img.png" alt="Team Logo" class="logo">
+            </div>
+
+            <!-- Top Tier -->
+            <div class="nav-top">
+                <div class="top-content">
+                    <div></div> <!-- Spacer for alignment -->
+                    <div class="auth-buttons">
+                        <button class="auth-button flex items-center space-x-2 text-white">
+                            <i class="fas fa-user text-lg rounded-full"></i>
+                            <span class="font-semibold">Login</span>
+                        </button>
+                        <button class="auth-button flex items-center space-x-2 text-white">
+                            <i class="fas fa-user text-lg"></i>
+                            <span class="font-semibold">Register</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator Line -->
+            <div class="nav-separator"></div>
+
+            <!-- Bottom Tier -->
+            <div class="nav-bottom">
+                <div class="bottom-content">
+                    <!-- Navigation Links -->
+                    <div class="nav-links">
+                        <a href="#" class="nav-item">NEWS</a>
+                        <a href="#" class="nav-item">FIXTURES</a>
+                        <a href="#" class="nav-item">TEAM</a>
+                        <a href="#" class="nav-item">STATISTICS</a>
+                        <a href="#" class="nav-item">OUR CLUB</a>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="right-section">
+                        <!-- Shop Section -->
+                        <div class="middle-navigation-item">
+                            <a href="#" class="shop-link">
+                                <svg class="shop-icon" viewBox="0 0 16 16" fill="none">
+                                    <path d="M14 5H2L3 14H13L14 5Z" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M5 5V3C5 2 6 1 8 1C10 1 11 2 11 3V5" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                                <span class="shop-text">SHOP</span>
+                            </a>
+                        </div>
+
+                        <!-- Search Icon -->
+                        <button class="search-button text-white text-xl p-2 mx-2">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yellow Border -->
+            <div class="yellow-border"></div>
+        </nav>
+    </div>
+    <!-- Hero Section -->
+    <!-- Main container with single background image -->
+    <div class="preview-page relative w-1440 min-h-screen">
+        <!-- Single background image -->
+        <img src="images/MainSection-img.jpeg" alt="Background"
+            class="main-background w-full h-full object-cover absolute inset-0" />
+
+        <!-- Preview banner section -->
+        <div class="preview-banner absolute bottom-0 left-0 right-0 h-40">
+            <!-- Gradient overlays -->
+            <div class="banner-gradient"></div>
+            <div class="banner-overlay"></div>
+
+            <!-- Preview text -->
+            <div class="absolute bottom-26 left-1/2 transform -translate-x-1/2 text-center z-20">
+                <h2 class="text-white text-5xl border-b-2">
+                    <span class="font-normal mr-2 preview-label">PREVIEW</span>
+                    <span class="preview-title">| Barça v Man City</span>
+                </h2>
+                <div class="flex items-center justify-center mt-2 text-yellow-400 text-[9px] ml-15">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="yellow"
+                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-square">
+                        <rect width="10" height="10" x="5" y="6" rx="2" />
+                    </svg>
+                    <span class="uppercase mr-2 border-b border-yellow-400 ">First Team</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-clock mr-0.5">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <span class="border-b border-white text-white">1 hr ago</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-split flex items-center justify-center border-t-8 border-[#001f3f]">
+        <div class="w-6/12 pt-1 max-w-5xl pb-8">
+            <div class="grid grid-cols-3 gap-2 mx-4">
+                <!-- Card 1 -->
+                <div class="bg-[#1a1a2e] px-4 rounded-md text-white">
+                    <img src="images/MainContainer1-img.jpeg" alt="Inside View"
+                        class="w-full h-36 object-cover rounded-md mb-4">
+                    <h3 class="text-base font-normal px-2 text-center mb-2">INSIDE VIEW: First workouts in Orlando</h3>
+                    <p class="flex items-center justify-center text-[10px] font-thin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="white"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-play mr-1">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                        08:55
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#1a1a2e] px-4 rounded-md text-white">
+                    <img src="images/js-lazy-picture.jpeg" alt="Welcome Event"
+                        class="w-full h-36 object-cover rounded-md mb-4">
+                    <h3 class="text-base font-normal px-2 text-center mb-2">Welcome Event in Orlando</h3>
+                    <p class="flex items-center justify-center text-[10px] font-thin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="yellow"
+                            stroke="yellow" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-square">
+                            <rect width="10" height="10" x="7" y="6" rx="2" />
+                        </svg>
+                        <span class="mr-5 text-yellow-200">CLUB</span>
+                        7 hrs ago
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#1a1a2e] px-4 rounded-md text-white">
+                    <img src="images/js-lazy-container3.jpeg" alt="Chimezie Metu"
+                        class="w-full h-36 object-cover rounded-md mb-4">
+                    <h3 class="text-base font-normal px-2 text-center mb-2">Chimezie Metu joins the team</h3>
+                    <p class="flex items-center justify-center text-[10px] font-thin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="yellow"
+                            stroke="yellow" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-square">
+                            <rect width="10" height="10" x="7" y="6" rx="2" />
+                        </svg>
+                        <span class="text-yellow-200 mr-5">BASKETBALL</span>
+                        3 hrs ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
