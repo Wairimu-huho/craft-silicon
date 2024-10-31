@@ -16,7 +16,7 @@ body {
 /* Main Navigation */
 .main-nav {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 112px;
     margin: 0 auto;
     background-color: #000000;
@@ -191,7 +191,7 @@ body {
 .yellow-border {
     position: absolute;
     bottom: 0;
-    width: 1440px;
+    width: 100%;
     height: 8px;
     background-color: #FFD700;
 }
@@ -208,7 +208,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 1440px) {
+@media (max-width: 100%) {
     .main-nav,
     .top-content,
     .bottom-content {
@@ -250,14 +250,6 @@ body {
     transition: opacity 0.3s ease;
 }
 
-/* Preview text container */
-/* /
-/* Text underline styles
-.preview-label,
-.preview-title {
-    border-bottom: 2px solid white;
-    padding-bottom: 0.25rem;
-} */
 
 /* Hover effects */
 .preview-banner:hover .banner-gradient {
@@ -350,4 +342,10 @@ body {
 }
 .bg-split {
     background: linear-gradient(to bottom, black 50%, #FFD700 50%, black 100%);
+}
+.gradient-text {
+    background: linear-gradient(to right, #facc15, #000000); /* Yellow to Black */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
